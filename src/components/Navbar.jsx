@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import CartWidget from "./CardWidget";
 import CardWidget from './CardWidget';
 
-const pages = ['Productos', 'Precios', 'Contacto'];
+const pages = [{label:'Productos',link: "/productos"},{label:'Precios',link: "/precios"}, {label:'contacto',link: "/contacto"}];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -89,8 +89,9 @@ export default function Navbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.label} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">
+                    <a href={page.link}>{page.label}</a></Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -117,17 +118,17 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.label}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <a href={page.link}>{page.label}</a>
               </Button>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-           <CardWidget/>
+           <CartWidget/>
           </Box>
         </Toolbar>
       </Container>

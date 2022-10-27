@@ -1,6 +1,6 @@
 import React from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
-export default function CardWidget(){
+export default function CartWidget(){
     return <div><ShoppingCartIcon /></div>
 }
