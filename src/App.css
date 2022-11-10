@@ -4,21 +4,25 @@
   font-size: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .footer{
   background-color: cadetblue;
+}
+
+.tarjetas{
+  border: red solid 3px;
+  border-radius: 8px;
+  width: 300px;
+  height: 350px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  text-align: center;
+  display:inline-flex;
+  flex-direction: row;
+}
+
+.tarjetas img{
+  width: 70%;
+  height: 60%;
+  align-items: center;
+  border-radius: 10px;
 }
