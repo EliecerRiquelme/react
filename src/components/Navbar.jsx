@@ -10,7 +10,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
-import CartWidget from "./CardWidget";
+import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
 const pages = [

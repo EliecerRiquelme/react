@@ -1,11 +1,31 @@
 import React from "react";
+import '../css/footer.css';
 
-export default function Footer(){
-    return <div className="footer">
-            <h4>Footer </h4>
-            <ul>
-                <li> <a href="https://mui.com">Estilos</a></li>
-                <li> <a href="https://es.reactjs.org">React</a> </li>
-            </ul>
-          </div>
+const Footer = () => {
+    return (
+        <div className="footer">
+            <div className="row">
+                <div className="contacto col-md-5 ">
+                    <h5> Conocenos </h5>
+                    <h5> Centro de ayuda </h5>
+                
+                </div>
+
+                <div className="redes-footer col-md-4">
+                    <i className="bi bi-facebook"></i>
+                    <i className="bi bi-instagram"></i>
+                    <i className="bi bi-whatsapp"></i>
+                </div>
+            </div>
+            
+            <br />
+            <div className="byMC">
+                <h6>By Eliecer Riquelme Fernandez</h6>
+            </div>
+
+         </div>
+        
+    )
 }
+
+export default Footer;

@@ -1,30 +1,35 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { productosHC } from "./data";
+import { useEffect } from "react";
+import { useState } from "react";
 import ItemDetail from "./ItemDetail";
 
-export default function ItemDetailContainer({ greeting }) {
-  const { iditem } = useParams();
+import { useParams } from "react-router-dom";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 
+export const ItemDetailContainer = () => {
   const [producto, setProducto] = useState({});
+  const { detalleId } = useParams();
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const productoPromise = new Promise((res, rej) => {
-      setTimeout(() => {
-       
-        res(productosHC.find((item) => item.id == iditem));
-      }, 2000);
+    const querybd = getFirestore();
+    const queryDoc = doc(querybd, "productos", `${detalleId}`);
+    getDoc(queryDoc).then((res) => {
+      console.log(res)
+      if(res.exists()){
+        setProducto({ id: res.id, ...res.data() });
+        setLoading(false)
+      }
     });
+  }, [detalleId]);
 
-    productoPromise.then((res) => {
-      setProducto(res);
-    });
-  }, [iditem]);
-
-  return (
-    <div >
-      <ItemDetail producto={producto} />
+  return(
+    <div>
+      { loading ? "loading"
+      :
+      <ItemDetail item={producto} />};
     </div>
-  );
-}
+  ) 
+};
+
+export default ItemDetailContainer;

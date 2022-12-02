@@ -1,26 +1,47 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
-export default function ItemCount({ ini, max, addItem }) {
-  const [count, setCount] = useState(ini);
-  function restar() {
-    if (count >= 2) {
-      setCount(count - 1);
-    }
-  }
+const ItemCount = (props) => {
+  const [count, setCount] = useState(props.initial);
 
-  function sumar() {
-    if (count < max) {
+  function aumentar() {
+    if (count < props.stock) {
       setCount(count + 1);
     }
   }
 
+  function disminuir() {
+    if (count > 1) {
+      setCount(count - 1);
+    }
+  }
+
   return (
-    <div>
-      <button onClick={restar}>-</button>
-      {count}
-      <button onClick={sumar}>+</button>
-      <br />
-      <button onClick={() => addItem(count)}>AGREGAR</button>
+    <div className="card item-count">
+      <div className="card-body">
+        <div className="flexcenter">
+          <button className="item-count__inputs" onClick={disminuir}>
+            <b>-</b>
+          </button>
+          <p> {count} </p>
+          <button className="item-count__inputs" onClick={aumentar}>
+            <b>+</b>
+          </button>
+        </div>
+        <p className="text-center">
+          <button
+            className="btn btn-primary mt-2"
+            onClick={() => props.onAdd(count)}
+          >
+            Agregar al carrito
+          </button>
+        </p>
+        <p className="text-center item-count__text">
+          El stock <b>disponible</b> es: {props.stock} unidades
+        </p>
+      </div>
     </div>
   );
-}
+};
+
+export default ItemCount;
