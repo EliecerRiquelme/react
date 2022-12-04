@@ -1,0 +1,119 @@
+[
+    {
+        "Tipo": "Tecnologia",
+        "Nombre": "HP Gamer Ak021",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/HPAK01.webp?alt=media&token=be40d101-849e-4896-b886-ac48803be5f3",
+        "Marca": "ACER",
+        "Anio": 2021,
+        "Precio": 1350000,
+        "Disponibles": 10,
+        "Detalle": {
+            "Procesador": "Intel I7",
+            "RAM": "12 GB",
+            "Disco": "SSD",
+            "ROM": "512 GB",
+            "Video": "NVidia",
+            "VideoRef": "GTX 1080"
+        },
+        "Descuento": "No"
+    },
+    {
+        "Tipo": "Tecnologia",
+        "Nombre": "ASUS Intel V15",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/ASUSIntel.webp?alt=media&token=6417009a-dc34-4662-8e64-f011dbdbaeb4",
+        "Marca": "ASUS",
+        "Anio": 2020,
+        "Precio": 1100000,
+        "Disponibles": 1,
+        "Detalle": {
+            "Procesador": "Intel I5",
+            "RAM": "8 GB",
+            "Disco": "SATA",
+            "ROM": "512 GB",
+            "Video": "Radeon",
+            "VideoRef": "RX 1700 "
+        },
+        "Descuento": "No"
+    },
+    {
+        "Tipo": "Tecnologia",
+        "Nombre": "LENOVO Ideapad",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/LENOVOIdeaPad.png?alt=media&token=3a6c799d-7881-4137-9378-e1a5bc433df4",
+        "Marca": "LENOVO",
+        "Anio": 2020,
+        "Precio": 950000,
+        "Disponibles": 0,
+        "Detalle": {
+            "Procesador": "AMD Ryzen 5",
+            "RAM": "4 GB",
+            "Disco": "SATA",
+            "ROM": "512 GB",
+            "Video": "NO",
+            "VideoRef": "NA"
+        },
+        "Descuento": "No"
+    },
+    {
+        "Tipo": "Libros",
+        "Nombre": "Doctor Sueño",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/DrSueno.webp?alt=media&token=36312a1d-a176-4ebf-aa87-8d9be3b61bc3",
+        "Editorial": "Pinguin",
+        "Anio": 2018,
+        "Precio": 55000,
+        "Disponibles": 20,
+        "Detalle": {
+            "Autor": "Stephen King.",
+            "Ranking": "5 estrellas.",
+            "Sinopsis": "Continuación de la famosa novela \"El Resplandor\"."
+        },
+        "Descuento": "No"
+    },
+    {
+        "Tipo": "Libros",
+        "Nombre": "Más allá del orden",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/MasAllaOrden.webp?alt=media&token=40634ebc-c3be-49e1-bcef-95e38a8e362e",
+        "Editorial": "Books of America",
+        "Anio": 2021,
+        "Precio": 65000,
+        "Disponibles": 7,
+        "Detalle": {
+            "Autor": "Jordan Peterson",
+            "Ranking": "4 estrellas.",
+            "Sinopsis": "Tomo dos del análisis sicológico del reputado doctor en siquiatría."
+        },
+        "Descuento": "No"
+    },
+    {
+        "Tipo": "Libros",
+        "Nombre": "Temina bien tu día",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/TerminaBienTuDia.jpg?alt=media&token=6c9ff1dd-9030-4c97-b3ab-5431c77ea00c",
+        "Editorial": "Faith Words",
+        "Anio": 2021,
+        "Precio": 62000,
+        "Disponibles": 2,
+        "Detalle": {
+            "Autor": "Joyce Meyer",
+            "Ranking": "5 estrellas.",
+            "Sinopsis": "Devocional cristiano para cada noche del año."
+        },
+        "Descuento": "Sí"
+    },
+    {
+        "Tipo": "Tecnologia",
+        "Nombre": "DELL Vostro",
+        "ImgName": "https://firebasestorage.googleapis.com/v0/b/marketplace-adn1217.appspot.com/o/DellVostro.webp?alt=media&token=a6ac7b1e-b499-4c15-9cc1-b896c8e2fbdd",
+        "Marca": "DELL",
+        "Anio": 2021,
+        "Precio": 1649000,
+        "Disponibles": 3,
+        "Detalle": {
+            "Procesador": "AMD Ryzen 5",
+            "RAM": "8 GB",
+            "Disco": "SSD",
+            "ROM": "256 GB",
+            "Video": "AMD RADEON",
+            "VideoRef": "RX Vega 8"
+        },
+        "Descuento": "Sí"
+    }
+]

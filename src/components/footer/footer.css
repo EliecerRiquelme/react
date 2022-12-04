@@ -1,0 +1,18 @@
+.footer{
+    background-color: rgb(52, 101, 165);
+    color: white;
+    height: auto;
+}
+.byMC{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.redes-footer i {
+    margin: 2rem;
+    display: inline-block;
+    justify-content: center;
+}
+.contacto{
+    margin: 2rem;
+}
