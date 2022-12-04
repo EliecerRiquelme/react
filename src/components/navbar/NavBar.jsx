@@ -19,9 +19,9 @@ const NavBar = () => {
             <div className="collapse navbar-collapse col-md-4" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                     <NavLink className="nav-link active" aria-current="page" to='/' >Productos</NavLink>
-                    <NavLink className="nav-link" to='/category/:Mujer' >Mujer</NavLink>
-                    <NavLink className="nav-link" to='/category/:Hombre' >Hombre</NavLink>
-                    <NavLink className="nav-link disabled" to='/'>Promociones</NavLink>
+                    <NavLink className="nav-link" to={'/category/:Mujer'} >Mujer</NavLink>
+                    <NavLink className="nav-link" to={'/category/:Hombre'} >Hombre</NavLink>
+                    <NavLink className="nav-link disabled" to={'/'}>Promociones</NavLink>
                 </div>
             </div>
             <form className="d-flex col-md-3">
